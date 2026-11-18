@@ -1,0 +1,10 @@
+# Versions used to train and test this project (Python 3.13).
+# scikit-learn is pinned exactly so the saved joblib pipeline loads reliably.
+scikit-learn==1.9.1
+pandas==3.1.1
+numpy==2.5.5
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.6.0
+streamlit==1.67.0
+pytest==9.2.0

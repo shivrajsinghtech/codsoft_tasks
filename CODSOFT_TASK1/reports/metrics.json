@@ -1,0 +1,179 @@
+{
+  "dataset": {
+    "train": {
+      "file": "train_data.txt",
+      "kind": "train",
+      "total_lines": 54214,
+      "parsed_records": 54214,
+      "blank_lines": 0,
+      "empty_descriptions": 0,
+      "malformed_lines": 0,
+      "malformed_examples": []
+    },
+    "test": {
+      "file": "test_data.txt",
+      "kind": "test",
+      "total_lines": 54200,
+      "parsed_records": 54200,
+      "blank_lines": 0,
+      "empty_descriptions": 0,
+      "malformed_lines": 0,
+      "malformed_examples": []
+    },
+    "dropped_empty_text_records": 0,
+    "train_split": 43371,
+    "validation_split": 10843,
+    "n_genres": 27
+  },
+  "selected_model": {
+    "model_key": "logistic_regression",
+    "model_name": "TF-IDF + Logistic Regression",
+    "params": {
+      "C": 5.0,
+      "class_weight": "balanced"
+    },
+    "selection_metric": "validation macro_f1",
+    "validation_metrics": {
+      "accuracy": 0.5877524670294199,
+      "macro_precision": 0.4166638395741674,
+      "macro_recall": 0.4389667747326524,
+      "macro_f1": 0.42145159941300614,
+      "weighted_f1": 0.587351651425294
+    },
+    "classes": [
+      "action",
+      "adult",
+      "adventure",
+      "animation",
+      "biography",
+      "comedy",
+      "crime",
+      "documentary",
+      "drama",
+      "family",
+      "fantasy",
+      "game-show",
+      "history",
+      "horror",
+      "music",
+      "musical",
+      "mystery",
+      "news",
+      "reality-tv",
+      "romance",
+      "sci-fi",
+      "short",
+      "sport",
+      "talk-show",
+      "thriller",
+      "war",
+      "western"
+    ],
+    "n_training_records": 54214,
+    "input": "cleaned title + plot description",
+    "trained_at": "2026-11-18T17:12:24+00:00",
+    "sklearn_version": "1.9.1",
+    "python_version": "3.13.18"
+  },
+  "validation": [
+    {
+      "model": "TF-IDF + Logistic Regression",
+      "key": "logistic_regression",
+      "accuracy": 0.5877524670294199,
+      "macro_precision": 0.4166638395741674,
+      "macro_recall": 0.4389667747326524,
+      "macro_f1": 0.42145159941300614,
+      "weighted_f1": 0.587351651425294
+    },
+    {
+      "model": "TF-IDF + Linear SVM",
+      "key": "linear_svm",
+      "accuracy": 0.6161578898828738,
+      "macro_precision": 0.5059011855786204,
+      "macro_recall": 0.3693596760536609,
+      "macro_f1": 0.4049536154442521,
+      "weighted_f1": 0.5920031047061838
+    },
+    {
+      "model": "TF-IDF + Multinomial Naive Bayes",
+      "key": "naive_bayes",
+      "accuracy": 0.5632205109287097,
+      "macro_precision": 0.40087765591041014,
+      "macro_recall": 0.36865959724651237,
+      "macro_f1": 0.3706782190909926,
+      "weighted_f1": 0.5474687696654124
+    },
+    {
+      "model": "Word2Vec embeddings + Logistic Regression (supplementary)",
+      "key": "word2vec_logreg",
+      "accuracy": 0.5522456884626026,
+      "macro_precision": 0.40931755587963387,
+      "macro_recall": 0.28114109280060895,
+      "macro_f1": 0.3109407186650079,
+      "weighted_f1": 0.5194637667269483
+    }
+  ],
+  "test": {
+    "solution_file": {
+      "file": "test_data_solution.txt",
+      "kind": "solution",
+      "total_lines": 54200,
+      "parsed_records": 54200,
+      "blank_lines": 0,
+      "empty_descriptions": 0,
+      "malformed_lines": 0,
+      "malformed_examples": []
+    },
+    "selected_model_metrics": {
+      "accuracy": 0.5916051660516605,
+      "macro_precision": 0.41675600329543655,
+      "macro_recall": 0.4431354044858536,
+      "macro_f1": 0.4235888201314477,
+      "weighted_f1": 0.5930871029891442,
+      "top3_accuracy": 0.8490590405904059
+    },
+    "all_models": [
+      {
+        "model": "TF-IDF + Logistic Regression",
+        "key": "logistic_regression",
+        "selected": true,
+        "accuracy": 0.5916051660516605,
+        "macro_precision": 0.41675600329543655,
+        "macro_recall": 0.4431354044858536,
+        "macro_f1": 0.4235888201314477,
+        "weighted_f1": 0.5930871029891442
+      },
+      {
+        "model": "TF-IDF + Linear SVM",
+        "key": "linear_svm",
+        "selected": false,
+        "accuracy": 0.6219003690036901,
+        "macro_precision": 0.5073577772199404,
+        "macro_recall": 0.37453760121253077,
+        "macro_f1": 0.4125709576885527,
+        "weighted_f1": 0.5975451866317719
+      },
+      {
+        "model": "TF-IDF + Multinomial Naive Bayes",
+        "key": "naive_bayes",
+        "selected": false,
+        "accuracy": 0.5703874538745387,
+        "macro_precision": 0.3933682616661528,
+        "macro_recall": 0.3786334152464648,
+        "macro_f1": 0.3769454946706712,
+        "weighted_f1": 0.5571149211618834
+      },
+      {
+        "model": "Word2Vec embeddings + Logistic Regression (supplementary)",
+        "key": "word2vec_logreg",
+        "selected": false,
+        "accuracy": 0.562859778597786,
+        "macro_precision": 0.39747509886861726,
+        "macro_recall": 0.2805793274992761,
+        "macro_f1": 0.31021619435248493,
+        "weighted_f1": 0.5298554297983821
+      }
+    ]
+  },
+  "runtime_seconds": 590.0
+}

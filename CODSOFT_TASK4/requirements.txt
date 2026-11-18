@@ -1,0 +1,14 @@
+# Tested with Python 3.13 and the versions below.
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+pillow>=13.0.0  # security floor: older versions have known CVEs (pulled in by matplotlib/streamlit)
+streamlit>=1.45
+pytest>=8.0
+
+# Optional: to open / re-run the notebook
+# jupyter
+# nbconvert

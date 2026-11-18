@@ -1,0 +1,20 @@
+# Exact versions used to train, evaluate and test this project (Python 3.13).
+# The saved model must be loaded with the same scikit-learn version it was trained with.
+
+# Core ML / data
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+gensim==4.4.0        # Word2Vec embeddings (supplementary experiment)
+
+# Visualisation
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Application
+streamlit==1.67.0
+
+# Testing
+pytest==9.1.1

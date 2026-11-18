@@ -1,0 +1,50 @@
+{
+  "model_key": "logistic_regression",
+  "model_name": "TF-IDF + Logistic Regression",
+  "params": {
+    "C": 5.0,
+    "class_weight": "balanced"
+  },
+  "selection_metric": "validation macro_f1",
+  "validation_metrics": {
+    "accuracy": 0.5877524670294199,
+    "macro_precision": 0.4166638395741674,
+    "macro_recall": 0.4389667747326524,
+    "macro_f1": 0.42145159941300614,
+    "weighted_f1": 0.587351651425294
+  },
+  "classes": [
+    "action",
+    "adult",
+    "adventure",
+    "animation",
+    "biography",
+    "comedy",
+    "crime",
+    "documentary",
+    "drama",
+    "family",
+    "fantasy",
+    "game-show",
+    "history",
+    "horror",
+    "music",
+    "musical",
+    "mystery",
+    "news",
+    "reality-tv",
+    "romance",
+    "sci-fi",
+    "short",
+    "sport",
+    "talk-show",
+    "thriller",
+    "war",
+    "western"
+  ],
+  "n_training_records": 54214,
+  "input": "cleaned title + plot description",
+  "trained_at": "2026-11-18T17:12:24+00:00",
+  "sklearn_version": "1.9.1",
+  "python_version": "3.13.18"
+}

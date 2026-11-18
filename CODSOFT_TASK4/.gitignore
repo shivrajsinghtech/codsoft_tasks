@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+.streamlit/secrets.toml
+secrets.toml
+credentials*.json
+*.p12
+*.pfx
+
+# Generated intermediates (re-created by train.py)
+data/processed/
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

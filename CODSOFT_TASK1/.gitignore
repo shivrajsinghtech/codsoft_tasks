@@ -1,0 +1,31 @@
+# Raw dataset (≈105 MB) – download/extract locally, see README
+data/raw/
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+.env.*
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ad-hoc prediction outputs
+predictions.csv
+
+# Large generated outputs – recreated by `python train.py`
+reports/test_predictions.csv
+reports/top_words_by_genre.csv

@@ -1,0 +1,39 @@
+# Repository-wide safety net. Each project folder also has its own .gitignore.
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets / credentials / local config
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.toml
+.streamlit/secrets.toml
+credentials*.json
+kaggle.json
+
+# Large raw data and archives
+*.zip
+CODSOFT_TASK1/data/raw/
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

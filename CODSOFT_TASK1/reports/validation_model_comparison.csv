@@ -1,0 +1,5 @@
+model,key,best_params,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+TF-IDF + Logistic Regression,logistic_regression,"{""C"": 5.0, ""class_weight"": ""balanced""}",0.5877524670294199,0.4166638395741674,0.4389667747326524,0.42145159941300614,0.587351651425294
+TF-IDF + Linear SVM,linear_svm,"{""C"": 0.3, ""class_weight"": null}",0.6161578898828738,0.5059011855786204,0.3693596760536609,0.4049536154442521,0.5920031047061838
+TF-IDF + Multinomial Naive Bayes,naive_bayes,"{""alpha"": 0.01, ""fit_prior"": false}",0.5632205109287097,0.40087765591041014,0.36865959724651237,0.3706782190909926,0.5474687696654124
+Word2Vec embeddings + Logistic Regression (supplementary),word2vec_logreg,"{""C"": 1.0, ""class_weight"": null}",0.5522456884626026,0.40931755587963387,0.28114109280060895,0.3109407186650079,0.5194637667269483

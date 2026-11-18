@@ -1,0 +1,350 @@
+{
+  "data": {
+    "rows": 10000,
+    "columns": 11,
+    "missing_values": {
+      "CreditScore": 0,
+      "Geography": 0,
+      "Gender": 0,
+      "Age": 0,
+      "Tenure": 0,
+      "Balance": 0,
+      "NumOfProducts": 0,
+      "HasCrCard": 0,
+      "IsActiveMember": 0,
+      "EstimatedSalary": 0,
+      "Exited": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "churn_rate": 0.2037,
+    "class_counts": {
+      "0": 7963,
+      "1": 2037
+    }
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_rows": 8000,
+    "test_rows": 2000,
+    "train_churn_rate": 0.20375,
+    "test_churn_rate": 0.2035
+  },
+  "cv": {
+    "folds": 5,
+    "refit_metric": "f1"
+  },
+  "models": {
+    "Logistic Regression": {
+      "cv": {
+        "f1": {
+          "mean": 0.4932211354958203,
+          "std": 0.022571204991455405
+        },
+        "recall": {
+          "mean": 0.6858895705521473,
+          "std": 0.040768706075671526
+        },
+        "precision": {
+          "mean": 0.3853065043660922,
+          "std": 0.01702604848927216
+        },
+        "roc_auc": {
+          "mean": 0.7672987836002736,
+          "std": 0.02037070634334586
+        },
+        "accuracy": {
+          "mean": 0.713,
+          "std": 0.013189721376890425
+        },
+        "best_params": {
+          "C": 0.01
+        }
+      },
+      "test": {
+        "accuracy": 0.718,
+        "precision": 0.39261285909712723,
+        "recall": 0.7051597051597052,
+        "f1": 0.5043936731107206,
+        "roc_auc": 0.7770744550405568,
+        "confusion_matrix": [
+          [
+            1149,
+            444
+          ],
+          [
+            120,
+            287
+          ]
+        ],
+        "classification_report": {
+          "Stayed": {
+            "precision": 0.9054373522458629,
+            "recall": 0.7212806026365348,
+            "f1-score": 0.8029350104821803,
+            "support": 1593.0
+          },
+          "Churned": {
+            "precision": 0.39261285909712723,
+            "recall": 0.7051597051597052,
+            "f1-score": 0.5043936731107206,
+            "support": 407.0
+          },
+          "accuracy": 0.718,
+          "macro avg": {
+            "precision": 0.6490251056714951,
+            "recall": 0.71322015389812,
+            "f1-score": 0.6536643417964505,
+            "support": 2000.0
+          },
+          "weighted avg": {
+            "precision": 0.8010775678900952,
+            "recall": 0.718,
+            "f1-score": 0.7421818483270882,
+            "support": 2000.0
+          }
+        },
+        "classification_report_text": "              precision    recall  f1-score   support\n\n      Stayed       0.91      0.72      0.80      1593\n     Churned       0.39      0.71      0.50       407\n\n    accuracy                           0.72      2000\n   macro avg       0.65      0.71      0.65      2000\nweighted avg       0.80      0.72      0.74      2000\n"
+      }
+    },
+    "Random Forest": {
+      "cv": {
+        "f1": {
+          "mean": 0.611738515973411,
+          "std": 0.024626284135302445
+        },
+        "recall": {
+          "mean": 0.6533742331288344,
+          "std": 0.045332400495487535
+        },
+        "precision": {
+          "mean": 0.5759472657476288,
+          "std": 0.011139258997577244
+        },
+        "roc_auc": {
+          "mean": 0.8536689428012828,
+          "std": 0.011654857438947841
+        },
+        "accuracy": {
+          "mean": 0.8315000000000001,
+          "std": 0.006356591067545586
+        },
+        "best_params": {
+          "max_depth": 12,
+          "min_samples_leaf": 1,
+          "n_estimators": 300
+        }
+      },
+      "test": {
+        "accuracy": 0.832,
+        "precision": 0.5747368421052632,
+        "recall": 0.6707616707616708,
+        "f1": 0.6190476190476191,
+        "roc_auc": 0.8575000269915525,
+        "confusion_matrix": [
+          [
+            1391,
+            202
+          ],
+          [
+            134,
+            273
+          ]
+        ],
+        "classification_report": {
+          "Stayed": {
+            "precision": 0.9121311475409836,
+            "recall": 0.8731952291274325,
+            "f1-score": 0.8922386144964721,
+            "support": 1593.0
+          },
+          "Churned": {
+            "precision": 0.5747368421052632,
+            "recall": 0.6707616707616708,
+            "f1-score": 0.6190476190476191,
+            "support": 407.0
+          },
+          "accuracy": 0.832,
+          "macro avg": {
+            "precision": 0.7434339948231234,
+            "recall": 0.7719784499445517,
+            "f1-score": 0.7556431167720457,
+            "support": 2000.0
+          },
+          "weighted avg": {
+            "precision": 0.8434714063848144,
+            "recall": 0.832,
+            "f1-score": 0.8366442469226305,
+            "support": 2000.0
+          }
+        },
+        "classification_report_text": "              precision    recall  f1-score   support\n\n      Stayed       0.91      0.87      0.89      1593\n     Churned       0.57      0.67      0.62       407\n\n    accuracy                           0.83      2000\n   macro avg       0.74      0.77      0.76      2000\nweighted avg       0.84      0.83      0.84      2000\n"
+      }
+    },
+    "Gradient Boosting": {
+      "cv": {
+        "f1": {
+          "mean": 0.607687247856702,
+          "std": 0.017138209607121122
+        },
+        "recall": {
+          "mean": 0.7190184049079755,
+          "std": 0.03734780676128692
+        },
+        "precision": {
+          "mean": 0.5266870521266729,
+          "std": 0.009514527337367611
+        },
+        "roc_auc": {
+          "mean": 0.8603003919831262,
+          "std": 0.013254140503921786
+        },
+        "accuracy": {
+          "mean": 0.811125,
+          "std": 0.005396758286230726
+        },
+        "best_params": {
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "n_estimators": 300
+        }
+      },
+      "test": {
+        "accuracy": 0.8085,
+        "precision": 0.5206896551724138,
+        "recall": 0.742014742014742,
+        "f1": 0.6119554204660588,
+        "roc_auc": 0.8588388079913504,
+        "confusion_matrix": [
+          [
+            1315,
+            278
+          ],
+          [
+            105,
+            302
+          ]
+        ],
+        "classification_report": {
+          "Stayed": {
+            "precision": 0.926056338028169,
+            "recall": 0.8254865034526051,
+            "f1-score": 0.8728841686027216,
+            "support": 1593.0
+          },
+          "Churned": {
+            "precision": 0.5206896551724138,
+            "recall": 0.742014742014742,
+            "f1-score": 0.6119554204660588,
+            "support": 407.0
+          },
+          "accuracy": 0.8085,
+          "macro avg": {
+            "precision": 0.7233729966002914,
+            "recall": 0.7837506227336736,
+            "f1-score": 0.7424197945343902,
+            "support": 2000.0
+          },
+          "weighted avg": {
+            "precision": 0.843564218067023,
+            "recall": 0.8085,
+            "f1-score": 0.8197851683569107,
+            "support": 2000.0
+          }
+        },
+        "classification_report_text": "              precision    recall  f1-score   support\n\n      Stayed       0.93      0.83      0.87      1593\n     Churned       0.52      0.74      0.61       407\n\n    accuracy                           0.81      2000\n   macro avg       0.72      0.78      0.74      2000\nweighted avg       0.84      0.81      0.82      2000\n"
+      }
+    }
+  },
+  "best_model": "Random Forest",
+  "selection_rationale": "Random Forest achieved the highest mean cross-validated F1 for the churn class (0.6117), with CV recall 0.6534 and CV ROC-AUC 0.8537. F1 was used because the business cost is two-sided: missing a churner (false negative) loses a customer, while flagging a loyal customer (false positive) wastes retention budget. The selection was made on cross-validation scores; test-set scores are reported only as an unbiased final check.",
+  "feature_importance": {
+    "Age": {
+      "mean": 0.11827173861072171,
+      "std": 0.005464965086971825
+    },
+    "NumOfProducts": {
+      "mean": 0.11405843439741747,
+      "std": 0.010173268175940556
+    },
+    "Balance": {
+      "mean": 0.03909101705711885,
+      "std": 0.005837226891862481
+    },
+    "IsActiveMember": {
+      "mean": 0.02825028418248764,
+      "std": 0.003392351859654567
+    },
+    "Geography": {
+      "mean": 0.026154814290407603,
+      "std": 0.0025707423395174463
+    },
+    "Gender": {
+      "mean": 0.008237513322259148,
+      "std": 0.0028226085584908043
+    },
+    "EstimatedSalary": {
+      "mean": -0.000554175130446266,
+      "std": 0.001741958117999947
+    },
+    "CreditScore": {
+      "mean": -0.0006706243994378692,
+      "std": 0.0010859047231763855
+    },
+    "Tenure": {
+      "mean": -0.0010073247361381931,
+      "std": 0.00113554805912874
+    },
+    "HasCrCard": {
+      "mean": -0.0014202183693708625,
+      "std": 0.0007980823563311159
+    }
+  },
+  "eda": {
+    "churn_rate": 0.2037,
+    "churn_rate_by_geography": {
+      "France": 0.1615,
+      "Germany": 0.3244,
+      "Spain": 0.1667
+    },
+    "churn_rate_by_gender": {
+      "Female": 0.2507,
+      "Male": 0.1646
+    },
+    "churn_rate_by_active": {
+      "0": 0.2685,
+      "1": 0.1427
+    },
+    "churn_rate_by_products": {
+      "1": 0.2771,
+      "2": 0.0758,
+      "3": 0.8271,
+      "4": 1.0
+    },
+    "churn_rate_by_age_band": {
+      "18-30": 0.0752,
+      "31-40": 0.1209,
+      "41-50": 0.3397,
+      "51-60": 0.5621,
+      "60+": 0.2478
+    },
+    "mean_age": {
+      "Stayed": 37.4,
+      "Churned": 44.8
+    },
+    "zero_balance_churn_rate": 0.1382,
+    "nonzero_balance_churn_rate": 0.2408,
+    "correlation_with_target": {
+      "Age": 0.2853,
+      "IsActiveMember": -0.1561,
+      "Balance": 0.1185,
+      "NumOfProducts": -0.0478,
+      "CreditScore": -0.0271,
+      "Tenure": -0.014,
+      "EstimatedSalary": 0.0121,
+      "HasCrCard": -0.0071
+    }
+  },
+  "training_seconds": 63.0
+}

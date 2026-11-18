@@ -1,0 +1,4 @@
+model,accuracy,precision_spam,recall_spam,f1_spam,roc_auc,cv_accuracy,cv_precision,cv_recall,cv_f1,tn,fp,fn,tp
+Multinomial Naive Bayes,0.9864,0.9831,0.9062,0.9431,0.9917,0.9884,0.9878,0.9184,0.9515,902,2,12,116
+Logistic Regression,0.9884,0.9394,0.9688,0.9538,0.9988,0.9898,0.969,0.9495,0.9587,896,8,4,124
+Support Vector Machine,0.9884,0.9328,0.9766,0.9542,0.9985,0.9893,0.9614,0.9534,0.957,895,9,3,125
