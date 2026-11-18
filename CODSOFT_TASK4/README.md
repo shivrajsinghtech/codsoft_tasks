@@ -282,4 +282,8 @@ There are 40 automated tests in `tests/`, and all of them pass:
 
 **https://github.com/shivrajsinghtech/CODSOFT_TASK4**
 
+## 👥 Contributors
+
+- [shivrajsinghtech](https://github.com/shivrajsinghtech)
+
 Author: **Shivraj Singh** · B.Tech student · CodSoft Machine Learning Intern

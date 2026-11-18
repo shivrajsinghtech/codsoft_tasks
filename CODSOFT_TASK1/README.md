@@ -259,6 +259,10 @@ treated as errors.
 |---|---|
 | ![](reports/screenshots/07_confusion_matrix.png) | ![](reports/screenshots/05_dataset_insights.png) |
 
+## Contributors
+
+- [shivrajsinghtech](https://github.com/shivrajsinghtech)
+
 ---
 
 *Built for the CodSoft Machine Learning Internship.* · Licensed under the [MIT License](LICENSE).

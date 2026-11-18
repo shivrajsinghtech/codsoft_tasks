@@ -221,5 +221,9 @@ There are **44 pytest tests** covering:
 
 https://github.com/shivrajsinghtech/CODSOFT_TASK3
 
+## 👥 Contributors
+
+- [shivrajsinghtech](https://github.com/shivrajsinghtech)
+
 ---
 *Author: Shivraj Singh — B.Tech student, CodSoft Machine Learning Intern*
