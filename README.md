@@ -172,3 +172,9 @@ of those repositories' files at the time this collection was created:
 - Task 4: https://github.com/shivrajsinghtech/CODSOFT_TASK4
 
 Task 1 is released under the MIT License (see [`CODSOFT_TASK1/LICENSE`](CODSOFT_TASK1/LICENSE)).
+
+---
+
+## Contributors
+
+- [shivrajsinghtech](https://github.com/shivrajsinghtech)
